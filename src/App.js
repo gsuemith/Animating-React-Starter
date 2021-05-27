@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring'
 import logo from './logo.svg';
 import './App.css';
-import Toggle from './Toggle';
+// import Routes from './Routes';
 import Nav from './Nav';
 import Checkout from './Checkout';
+import Modal from './Modal';
 
 const App = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -27,7 +28,7 @@ const App = () => {
         {/* <Nav style={navAnimation}/> */}
       </header>
       <main>
-        <Toggle />
+        <Modal/>
         <Checkout isOpen={isNavOpen}/>
       </main>
     </animated.div>
